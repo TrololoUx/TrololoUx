@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width" />
     <link href="./OurStyle.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <!--<link href="http://ui.telerikacademy.com/Content/bootstrap.css" rel="stylesheet">-->
-    <script scr="./The SCRIPT.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <main>
-        <header>
-            <nav class="navbar navbar-default">
+    <main id="root">
+        <header id="main-header">
+            <nav id="main-nav-mobile" class="navbar navbar-default">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -26,43 +25,77 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>  
                         </button>
-                        <a class="navbar-brand" href="#">Brand</a>
+                        <!--<a class="navbar-brand" href="#">Brand</a>-->
+                    </div>
+                    <div id="logo-container" class="inline-block">
+                        <a class="navbar-logo" href="#">
+                            <img id="logo" src="./Images/telerik-academy-logo-nav.png" alt="Telerik Academy logo">
+                        </a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">Link</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">One more separated link</a></li>
+                    <div class="collapse navbar-collapse menu-container" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav text-left">
+                            <li class="menu-item dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Академия
+                                    <!--<img class="drop-down-arrow" src="./Images/drop-down-arrow.png">-->
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="display: none">
+                                    <!--place for submenus-->
                                 </ul>
                             </li>
-                        </ul>
-                        <form class="navbar-form navbar-left">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Link</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
+                            <li class="menu-item dropdown hasSubdropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Курсове и инициативи
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu big-dropdown-menu" style="display: none">
+                                    <!--place for submenus-->
                                 </ul>
+                            </li>
+                            <li class="menu-item dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Форум
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="display: none">
+                                    <!--place for submenus-->
+                                </ul>
+                            </li>
+                            <li class="menu-item dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img class="user-img" src="./Images/user.png" alt="User">
+                                            Потребител
+                                            <span class="caret"></span>
+                                        </a>
+                                <ul class="dropdown-menu" style="display: none">
+                                    <li><a href="/Users/Auth/Login" id="EntranceButton" class="entranceButton" rel="nofollow">Вход</a></li>
+                                    <li><a href="/Users/Auth/Registration" class="entranceButton" rel="nofollow">Регистрация</a></li>
+                                    <li><a href="/Users/Auth/FacebookLogin" id="FbLogin" class="entranceButton" rel="nofollow">Вход с Facebook</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-bell">
+                                <a href="#">
+                                    <i class="fa fa-bell" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="nav-envelope">
+                                <a href="#">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="nav-star">
+                                <a href="#">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="nav-search">
+                                <a href="#">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="nav-question">
+                                <a href="#">
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -73,10 +106,10 @@
         </header>
         <article>
 
-        </article>    
+        </article>
         <footer>
-            
+
         </footer>
     </main>
-    
+
 </body>
