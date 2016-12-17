@@ -1,4 +1,0 @@
-# TrololoUx
-
-
-# Course project assignment
