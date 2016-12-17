@@ -32,6 +32,10 @@ body {
     position: relative;
 }
 
+#main-header {
+    height: 50px;
+}
+
 .right {
     float: right;
 }
@@ -87,12 +91,18 @@ h1, h2, h3, h4, h5, h6, .k-header {
     margin: 3px;
     font-weight: normal;
 }
+
 footer {
     background: black;
     height: 80px;
 }
 
+.nav > .dropdown > .dropdown-toggle {
+    color: white !important;
+}
+
 .container-fluid {
+    height: 50px;
     display: block;
     background-color: black;
 }
@@ -153,6 +163,15 @@ footer {
     margin-top: 12px;
 }
 
+.fa {
+    color: white;    
+}
+
+.fa:hover {
+    color: #ccc;
+
+}
+
 .container {
     width: 100%;
     position: absolute;
@@ -169,6 +188,10 @@ footer {
     margin-left: 40px;
 }
 
+.user-img {
+    width: 24px;
+}
+
 .blue {
     color: rgb(67, 164, 185);
 }
@@ -178,6 +201,13 @@ footer {
         background-color: skyblue;
     }
 }
+
+@media (min-width: 768px) {
+    #main-nav-mobile {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
 
 @media (max-width: 768px) {
     .mobile-menu-button {
@@ -189,11 +219,8 @@ footer {
     }
 }
 
-@media (min-width: 768px) {
-    #main-nav-mobile {
-        position: fixed;
-        width: 100%;
-        z-index: 1000;
+    .menu-container {
+        display: inline-block !important;
     }
 }
 
