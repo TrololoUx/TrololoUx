@@ -16,6 +16,11 @@
         <header id="main-header">
             <nav id="main-nav-mobile" class="navbar navbar-default">
                 <div class="container-fluid">
+                    <div id="logo-container" class="inline-block">
+                        <a class="navbar-logo" href="#">
+                            <img id="logo" src="./Images/telerik-academy-logo-nav.png" alt="Telerik Academy logo">
+                        </a>
+                    </div>
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -27,45 +32,14 @@
                         </button>
                         <!--<a class="navbar-brand" href="#">Brand</a>-->
                     </div>
-                    <div id="logo-container" class="inline-block">
-                        <a class="navbar-logo" href="#">
-                            <img id="logo" src="./Images/telerik-academy-logo-nav.png" alt="Telerik Academy logo">
-                        </a>
-                    </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse menu-container" id="bs-example-navbar-collapse-1">
+                    <div class="collapse navbar-collapse menu-container" id="">
                         <ul class="nav navbar-nav text-left">
                             <li class="menu-item dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Академия
-                                    <!--<img class="drop-down-arrow" src="./Images/drop-down-arrow.png">-->
-                                    <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu" style="display: none">
-                                    <!--place for submenus-->
-                                </ul>
-                            </li>
-                            <li class="menu-item dropdown hasSubdropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Курсове и инициативи
-                                    <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu big-dropdown-menu" style="display: none">
-                                    <!--place for submenus-->
-                                </ul>
-                            </li>
-                            <li class="menu-item dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Форум
-                                    <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu" style="display: none">
-                                    <!--place for submenus-->
-                                </ul>
-                            </li>
-                            <li class="menu-item dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <img class="user-img" src="./Images/user.png" alt="User">
-                                            Потребител
-                                            <span class="caret"></span>
-                                        </a>
+                                    <img class="user-img" src="./Images/user.png" alt="User"> ПОТРЕБИТЕЛ
+                                    <span class="caret"></span>
+                                </a>
                                 <ul class="dropdown-menu" style="display: none">
                                     <li><a href="/Users/Auth/Login" id="EntranceButton" class="entranceButton" rel="nofollow">Вход</a></li>
                                     <li><a href="/Users/Auth/Registration" class="entranceButton" rel="nofollow">Регистрация</a></li>
@@ -74,18 +48,46 @@
                             </li>
                             <li class="nav-bell">
                                 <a href="#">
-                                    <i class="fa fa-bell" aria-hidden="true"></i>
+                                    <i class="fa fa-bell-o" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li class="nav-envelope">
                                 <a href="#">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li class="nav-star">
                                 <a href="#">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse menu-container" id="">
+                        <ul class="nav navbar-nav text-left">
+                            <li class="menu-item dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">АКАДЕМИЯ
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="display: none">
+                                    <!--place for submenus-->
+                                </ul>
+                            </li>
+                            <li class="menu-item dropdown hasSubdropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">КУРСУВЕ И ИНИЦИАТИВИ
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu big-dropdown-menu" style="display: none">
+                                    <!--place for submenus-->
+                                </ul>
+                            </li>
+                            <li class="menu-item dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ФОРУМ
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="display: none">
+                                    <!--place for submenus-->
+                                </ul>
                             </li>
                             <li class="nav-search">
                                 <a href="#">
@@ -94,11 +96,13 @@
                             </li>
                             <li class="nav-question">
                                 <a href="#">
-                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
                                 </a>
                             </li>
                         </ul>
                     </div>
+                    
+
                     <!-- /.navbar-collapse -->
                 </div>
                 <!-- /.container-fluid -->
