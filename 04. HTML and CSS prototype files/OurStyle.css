@@ -27,12 +27,6 @@ body {
     background-color: yellowgreen;
 }
 
-@media screen and (max-width: 500px) {
-    body {
-        background-color: skyblue;
-    }
-}
-
 #root {
     min-height: 100%;
     position: relative;
@@ -93,13 +87,9 @@ h1, h2, h3, h4, h5, h6, .k-header {
     margin: 3px;
     font-weight: normal;
 }
-
-@media (min-width: 768px) {
-    #main-nav-mobile {
-        position: fixed;
-        width: 100%;
-        z-index: 1000;
-    }
+footer {
+    background: black;
+    height: 80px;
 }
 
 .container-fluid {
@@ -111,16 +101,6 @@ h1, h2, h3, h4, h5, h6, .k-header {
     --height: 51px;
     float: right;
     margin-right: 40px;
-}
-
-@media (max-width: 768px) {
-    .mobile-menu-button {
-        display: none;
-    }
-
-    .menu {
-        display: none;
-    }
 }
 
 #logo-container {
@@ -191,5 +171,29 @@ h1, h2, h3, h4, h5, h6, .k-header {
 
 .blue {
     color: rgb(67, 164, 185);
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: skyblue;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-button {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #main-nav-mobile {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
 }
 
