@@ -3,78 +3,66 @@
 
 <head>
     <title>Materials page</title>
+    <meta name="viewport" content="width=device-width" />
     <link href="./OurStyle.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!--<link href="http://ui.telerikacademy.com/Content/bootstrap.css" rel="stylesheet">-->
     <script scr="./The SCRIPT.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div id="root">
-        <header id="main-header">
-            <nav id="main-nav-mobile" class="navbar navbar-default">
+    <main>
+        <header>
+            <nav class="navbar navbar-default">
                 <div class="container-fluid">
-                    <div class="navbar-header inline-block">
-                        <!--<button type="button" class="mobile-menu-button collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
                             aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                        </button>-->
-                        <div id="logo-container">
-                            <a class="navbar-logo" href="#">
-                                <img id="logo" src="./Images/telerik-academy-logo-nav.png" alt="Telerik Academy logo">
-                            </a>
-                        </div>
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>  
+                        </button>
+                        <a class="navbar-brand" href="#">Brand</a>
                     </div>
-
-                    <div class="menu-container inline-block" id="bs-example-navbar-collapse-1">
-                        <ul class="menu">
-                            <li class="menu-item dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Академия
-                                    <img class="drop-down-arrow" src="./Images/drop-down-arrow.png">
-                                </a>
-                                <ul class="dropdown-menu" style="display: none">
-                                    <!--place for submenus-->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-item dropdown hasSubdropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Курсове и инициативи
-                                    <img class="drop-down-arrow" src="./Images/drop-down-arrow.png">
-                                </a>
-                                <ul class="dropdown-menu big-dropdown-menu" style="display: none">
-                                    <!--place for submenus-->
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
                                 </ul>
-                            </li>
-                            <li class="menu-item dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Форум
-                                    <img class="drop-down-arrow" src="./Images/drop-down-arrow.png">
-                                </a>
-                                <ul class="dropdown-menu" style="display: none">
-                                    <!--place for submenus-->
-                                </ul>
-                            </li>
-                            <li class="menu-item dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Потребител
-                                            <img class="drop-down-arrow" src="./Images/drop-down-arrow.png">
-                                        </a>
-                                <ul class="dropdown-menu" style="display: none">
-                                    <li><a href="/Users/Auth/Login" id="EntranceButton" class="entranceButton" rel="nofollow">Вход</a></li>
-                                    <li><a href="/Users/Auth/Registration" class="entranceButton" rel="nofollow">Регистрация</a></li>
-                                    <li><a href="/Users/Auth/FacebookLogin" id="FbLogin" class="entranceButton" rel="nofollow">Вход с Facebook</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-icon nav-search">
-                                <a class="icon-link" href="#">
-                                    <img class="icon" src="./Images/search.png" alt="Search icon">
-                                </a>
-                            </li>
-                            <li class="menu-icon nav-help">
-                                <a class="icon-link" href="#">
-                                    <img class="icon" src="./Images/question-icon.png" alt="Question icon">
-                                </a>
                             </li>
                         </ul>
                     </div>
@@ -83,21 +71,12 @@
                 <!-- /.container-fluid -->
             </nav>
         </header>
-        <div class="container">
-            <div class="left">
-                <div class="navigation-container">
-                    <a href="#">Курсове и инициативи</a>
-                    <strong class="blue">></strong>
-                    <a href="#">Основи на програмирането</a>
-                    <strong class="blue">></strong>
-                    <a href="#">Основи на JavaScript</a>
-                </div>
-                <div class="title-container">
-                    <h2>Масиви</h2>
-                    <p>От <a href="#">Въведение в TypeScript</a>, 23 Оттомври</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- root -->
+        <article>
+
+        </article>    
+        <footer>
+            
+        </footer>
+    </main>
+    
 </body>
