@@ -24,7 +24,6 @@ body {
     font: 14px Roboto, "Roboto", sans-serif;
     color: #000000;
     height: 100%;
-    background-color: yellowgreen;
 }
 
 #root {
@@ -33,7 +32,7 @@ body {
 }
 
 #main-header {
-    height: 50px;
+    height: 54px;
 }
 
 .right {
@@ -52,10 +51,6 @@ body {
     text-align: center;
 }
 
-img.center {
-    vertical-align: middle;
-}
-
 .bold {
     font-weight: bold;
 }
@@ -64,13 +59,18 @@ img.center {
     display: inline-block;
 }
 
+a {
+    color: #61A9C9;
+}
+
 a, a:hover, a:visited, a:active, a:focus {
         outline: none;
         text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #FF5E56;
 }
 
 a img {
@@ -83,7 +83,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, .k-header {
-    color: white;
+    color: #1F8294;
     margin: 3px;
     font-weight: normal;
 }
@@ -93,12 +93,12 @@ footer {
     height: 80px;
 }
 
-.nav > .dropdown > .dropdown-toggle {
-    color: white !important;
+.navbar {
+    border: none;
 }
 
 .container-fluid {
-    height: 50px;
+    height: 54px;
     display: block;
     background-color: black;
 }
@@ -107,6 +107,10 @@ footer {
     --height: 51px;
     float: right;
     margin-right: 40px;
+}
+
+.nav > .dropdown > .dropdown-toggle {
+    color: white !important;
 }
 
 #logo-container {
@@ -132,9 +136,9 @@ footer {
     background-color: rgba(255,255,255,.25);
 }
 
-.menu-icon {
-    float: right;
-    margin: 15px;
+.user-img {
+    width: 24px;
+    border: 1px solid white;
 }
 
 .menu > li > a.dropdown-toggle {
@@ -145,37 +149,14 @@ footer {
     text-decoration: none;
 }
 
-.icon {
-    height: 24px;
-    width: 24px;
-}
-
-.drop-down-arrow {
-    height: 12px;
-    width: 12px;
-}
-
-.icon-link {
-    margin-top: 12px;
-}
-
-.fa {
-    color: white;    
-}
-
-.fa:hover {
-    color: #ccc;
-
-}
-
 .container {
     width: 100%;
-    position: absolute;
-    top: 50px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .navigation-container {
-    margin-top:20px;
+    margin-top: 15px;
     margin-left: 40px;
 }
 
@@ -184,18 +165,36 @@ footer {
     margin-left: 40px;
 }
 
-.user-img {
-    width: 24px;
+.fa {
+    color: white;
+    font-size: 24px;    
 }
 
-.blue {
-    color: rgb(67, 164, 185);
+.fa:hover {
+    color: #ccc;
 }
 
-@media screen and (max-width: 500px) {
-    body {
-        background-color: skyblue;
-    }
+.fa-share-alt, .fa-share-alt:hover {
+    color: #FF5E56;
+    font-size: 40px;
+}
+
+.share-links {
+    margin-left: 20px;
+}
+
+.share-links .fa {
+    color: #1F8294;
+    font-size: 40px;
+    padding: 0 5px;
+}
+
+.current-directory {
+    color: #FF5E56
+}
+
+.share {
+    margin-top: 28px;
 }
 
 @media (min-width: 768px) {
