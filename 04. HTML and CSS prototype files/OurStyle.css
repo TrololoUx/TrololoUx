@@ -202,9 +202,55 @@ div#mainMenu.collapse.in {
     color: #FF5E56
 }
 
+.lector-info {
+    text-align: center;
+}
+
+.lecture-description p strong {
+    font-size: 30px;
+}
+
+.decor {
+    list-style-type: circle;
+}
+
 .lector-info img {
-    width: 250px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
+    border-radius: 5px;
+}
+
+.other-lecture h3{
+ text-align: center;
+ margin-bottom: 20px;
+ color: black;
+}
+
+.other-lecture .show-more {
+    text-align: center;
+    color: grey;
+}
+
+.other-lecture i {
+    color: grey;
+    margin-top: 15px;
+    vertical-align: text-bottom
+}
+
+.upper {
+    text-transform: uppercase;
+    color: black !important;
+}
+
+.box {
+    border: 1px solid grey;
+    width: 255px;
+    height: 245px;
+}
+
+.box p {
+    margin-left: 10px;
+    color: grey;
 }
 @media (max-width: 767px) {
     .visible-on-mobile{
