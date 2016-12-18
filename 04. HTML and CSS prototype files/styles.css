@@ -202,8 +202,8 @@ div#mainMenu.collapse.in {
     transition: all 0.8s ease-in-out;
 }
 
-.iconsHolder.visible{
-    right:0;
+.visible{
+    right: 0!important;
 }
 
 .visible-on-mobile{
@@ -279,6 +279,12 @@ div#mainMenu.collapse.in {
 }
 .video-padding{
     padding: 0 10% 0 10%;
+    position: relative;
+}
+.video-controls-holder {
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }
 .videoWrapper {
     position: relative;
@@ -294,6 +300,51 @@ div#mainMenu.collapse.in {
     height: 100%;
 }
 
+.video-content {
+    margin-bottom: 10px;
+}
+
+.transparent-holder {
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.85);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -40%;
+    transition: all 0.8s ease-in-out;
+}
+
+#video-content-inner h3 {
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+#video-content-inner .fa-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #4f5d6c;
+    transition: all 0.3s ease-in-out;
+}
+#video-content-inner .fa-close:hover{
+    color:#fff;
+}
+#video-content-inner .list-group-item {
+    background: none;
+    border: none;
+    padding: 10px 0px 10px 0px;
+    color: #fff;
+}
+
+#video-content-inner .list-group-item a{
+    color:#a7a7a7;
+}
+
+#video-content-inner .list-group-item a:hover{
+    color:#fff;
+}
+
 .lector-info {
     text-align: center;
 }
@@ -305,6 +356,7 @@ div#mainMenu.collapse.in {
 
 .f-size {
     font-size: 35px;
+    font-weight:100;
 }
 
 .lecture-description {
@@ -455,5 +507,18 @@ div#mainMenu.collapse.in {
 
     .video-padding{
         padding: 0px;
+    }
+
+    .video-controls-holder {
+        position: absolute;
+        top: initial;
+        right: initial;
+        bottom: -40px;
+        left: 15px;
+    }
+
+    .video-content,
+    .video-add-note{
+        float:left;
     }
 }
