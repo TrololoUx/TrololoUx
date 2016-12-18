@@ -55,6 +55,10 @@ body {
     font-weight: bold;
 }
 
+.blue {
+    color: #1F8294;
+}
+
 .inline-block {
     display: inline-block;
 }
@@ -166,57 +170,40 @@ footer {
     margin-bottom: 10px;
 }
 
+
 .fa {
-    color: white;
-    font-size: 24px;    
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
-.fa:hover {
-    color: #ccc;
-}
-
-.share {
-    margin-top: 28px;
-}
-
-.share:hover {
-    cursor:pointer;
-}
-
-.share input {
-  display: none;
-}
-
-.fa-share-alt {
-    color: #FF5E56;
-    font-size: 40px;
-}
-
-.fa-share-alt:hover {
-    color: #1F8294;
-}
-
-.fa-share-alt.blue:hover {
+.fa.blue:hover,
+.iconsHolder.visible .fa-share-alt{
     color: #FF5E56;
 }
 
-.blue {
-    color: #1F8294;
+.iconSeparator {
+    color: #a7a7a7;
 }
 
-.share-links {
-    margin-left: 20px;
+/*Share Icons */
+.iconsWrapper{
+    width: 156px;
+    height: 24px;
+    overflow: hidden;
+    position: relative;
 }
 
-.share input:checked +label +.share-links {
-  display: block;
+.iconsHolder{
+    position: absolute;
+    right: -112px;
+    transition: all 0.8s ease-in-out;
 }
 
-.share-links .fa {
-    color: #1F8294;
-    font-size: 40px;
-    padding: 0 5px;
+.iconsHolder.visible{
+    right:0;
 }
+
 
 .current-directory {
     color: #FF5E56

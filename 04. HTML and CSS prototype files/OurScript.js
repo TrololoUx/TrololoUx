@@ -1,14 +1,12 @@
 $(function () {
     //share icons
-    let shareIconDiv = $('.share');
-    let shareLinks = $('.share-links');
-    let shareIcon = $('.share .fa-share-alt');
+    let $shareIconDiv = $('.iconsHolder');
+    let $shareIcon = $('.fa-share-alt');
 
-    shareIconDiv.on('click', onShareIconClick)
+    $shareIcon.on('click', onShareIconClick);
 
     function onShareIconClick(ev) {
-        shareLinks.toggleClass('hidden');
-        shareIcon.toggleClass('blue');
+        $shareIconDiv.toggleClass('visible');
     }
 
     //video
