@@ -33,10 +33,31 @@ $(function () {
 
     goToArr.on('click', changeVideo);
 
-
     function changeVideo(ev) {
         video.attr('src', 'https://www.youtube.com/embed/cj4lCdBJRrw?list=PLF4lVL1sPDSnWZrG7cC35Uag1bx3We8le&start=450');
     }
+
+    //add note controls
+    let $noteIcon = $(".video-add-note .fa-edit");
+    let $noteDiv = $("#video-add-note");
+    let $noteCloseIIcon = $("#video-add-note .fa-close");
+
+    $noteIcon.on('click', openNewNote);
+    $noteCloseIIcon.on('click', closeNewNote);
+
+    function openNewNote(ev) {
+        $contentBar.fadeOut();
+        $noteIcon.fadeOut();
+        $noteDiv.addClass('visible');
+    }
+
+    function closeNewNote(ev) {
+        $contentBar.fadeIn();
+        $noteIcon.fadeIn();
+        $noteDiv.removeClass('visible');
+    }
+
+
 
 
     let videoLink = $('#video-link');
