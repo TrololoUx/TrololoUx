@@ -31,6 +31,15 @@ body {
     position: relative;
 }
 
+.nav-dropdown-menu{
+    background-color: #348192;
+}
+
+.nav-dropdown-menu li a:hover {
+    text-decoration: underline;
+    background-color: #348192;
+}
+
 #main-header .navbar-default {
     background:#484455;
 }
