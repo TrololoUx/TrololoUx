@@ -9,7 +9,25 @@ $(function () {
         $shareIconDiv.toggleClass('visible');
     }
 
-    //video
+    //video content toggle
+    let $contentBar = $('.video-content .fa-bars');
+    let $contentDiv = $('#video-content-inner');
+    let $contentCloseIcon = $('#video-content-inner .fa-close');
+
+    $contentBar.on('click', openVideoContent);
+    $contentCloseIcon.on('click', closeVideoContent);
+
+    function openVideoContent(ev) {
+        $contentBar.fadeOut();
+        $contentDiv.addClass('visible');
+    }
+
+    function closeVideoContent(ev) {
+        $contentBar.fadeIn();
+        $contentDiv.removeClass('visible');
+    }
+
+    //video controls
     let goToArr = $('#go-to-array');
     let video = $('#youtube');
 
