@@ -163,6 +163,7 @@ footer {
 .title-container {
     margin-top: 10px;
     margin-left: 40px;
+    margin-bottom: 10px;
 }
 
 .fa {
@@ -174,13 +175,41 @@ footer {
     color: #ccc;
 }
 
-.fa-share-alt, .fa-share-alt:hover {
+.share {
+    margin-top: 28px;
+}
+
+.share:hover {
+    cursor:pointer;
+}
+
+.share input {
+  display: none;
+}
+
+.fa-share-alt {
     color: #FF5E56;
     font-size: 40px;
 }
 
+.fa-share-alt:hover {
+    color: #1F8294;
+}
+
+.fa-share-alt.blue:hover {
+    color: #FF5E56;
+}
+
+.blue {
+    color: #1F8294;
+}
+
 .share-links {
     margin-left: 20px;
+}
+
+.share input:checked +label +.share-links {
+  display: block;
 }
 
 .share-links .fa {
@@ -191,10 +220,6 @@ footer {
 
 .current-directory {
     color: #FF5E56
-}
-
-.share {
-    margin-top: 28px;
 }
 
 @media (min-width: 768px) {
