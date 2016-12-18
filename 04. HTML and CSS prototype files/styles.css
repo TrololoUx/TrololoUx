@@ -213,6 +213,65 @@ div#mainMenu.collapse.in {
 .current-directory {
     color: #FF5E56
 }
+/*TABS STYLES*/
+#submenu {
+    background: #348192;
+}
+
+#submenu .nav-tabs {
+    border: none;
+}
+
+#submenu .nav-tabs>li.active>a,
+#submenu .nav-tabs>li.active>a:focus,
+#submenu .nav-tabs>li.active>a:hover,
+#submenu .nav-tabs>li > a:hover,
+#submenu .nav-tabs>li a{
+    font-size:17px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    background:none;
+    position:relative;
+}
+
+#submenu .nav-tabs>li.active>a:hover:after,
+#submenu .nav-tabs>li.active>a:after,
+#submenu .nav-tabs>li.active>a:focus:after,
+#submenu .nav-tabs>li.active>a:after,
+#submenu .nav-tabs>li:not(.not-visible-on-mobile) > a:hover:after{
+    content:"";
+    display:block;
+    width:65%;
+    height:3px;
+    position:absolute;
+    bottom:5px;
+    background: #fff;
+}
+
+#submenu li.not-visible-on-mobile i {
+    font-size: 21px;
+}
+#submenu li.not-visible-on-mobile:hover a,
+#submenu li.not-visible-on-mobile:hover i{
+    color:#FF5E56;
+}
+
+.notes-tab{
+    width:110px;
+}
+
+.notes-number {
+    width:20px;
+    height:20px;
+    background:#10a67d;
+    border-radius:50%;
+    color:#fff;
+    position:absolute;
+    right:0;
+    top:28%;
+    padding-left:6px;
+}
 
 .lector-info {
     text-align: center;
