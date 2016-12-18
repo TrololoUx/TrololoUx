@@ -87,8 +87,8 @@ p {
 }
 
 footer {
-    background: black;
-    height: 80px;
+    background: #484455;
+    padding-top: 50px;
 }
 
 #main-nav-mobile {
@@ -356,7 +356,7 @@ div#mainMenu.collapse.in {
 
 .f-size {
     font-size: 35px;
-    font-weight:100;
+    font-weight: 300;
 }
 
 .lecture-description {
@@ -369,10 +369,6 @@ div#mainMenu.collapse.in {
 
 #other-lecture-wrap {
     margin-top: 85px;
-}
-
-.decor {
-    list-style-type: circle;
 }
 
 .lector-info img {
@@ -396,20 +392,21 @@ div#mainMenu.collapse.in {
 
 .other-lecture i {
     color: #4f5d6c;
-    margin-top: 15px;
-    
+    margin-top: 15px;   
 }
-
 
 .upper {
     text-transform: uppercase;
     color: black !important;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .box {
-    border: 1px solid #4f5d6c;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 10px;
  
 }
 
@@ -476,6 +473,64 @@ div#mainMenu.collapse.in {
 
 .fa-plus-circle {
     color: white;
+}
+
+/*Footer Elements*/
+.footer-section {
+    margin-bottom: 40px;
+}
+
+.footer-section h4 {
+    color: #777b87;
+}
+
+.footer-list {
+    list-style-type: none;
+}
+
+.footer-list a {
+    color: white;
+}
+
+.footer-rights {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.footer-rights a {
+    color: #928e9f;
+}
+
+.footer-links-container {
+    float: right;
+}
+
+/*.links-group {
+    float: right;
+}*/
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 2px solid white;
+    float: right;
+    margin-left: 10px;
+}
+
+.circle-icon-container {
+    max-width: 50%;
+}
+
+.circle .fa {
+    color: white;
+    line-height: 48px;
+    --font-size: 16px;
+    vertical-align: middle;
 }
 
 @media (max-width: 767px) {
