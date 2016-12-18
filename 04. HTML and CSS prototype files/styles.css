@@ -298,12 +298,25 @@ div#mainMenu.collapse.in {
     text-align: center;
 }
 
+.info {
+    color: #4f5d6c;
+    font-size: 17px;
+}
+
 .f-size {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .lecture-description {
     padding-top: 15px;
+}
+
+#lector-info-wrap {
+    margin-top: 40px;
+}
+
+#other-lecture-wrap {
+    margin-top: 85px;
 }
 
 .decor {
@@ -318,35 +331,39 @@ div#mainMenu.collapse.in {
 
 .other-lecture h3{
  text-align: center;
- margin-bottom: 20px;
+ margin-bottom: 30px;
  color: black;
+ font-size: 20px;
 }
 
-.other-lecture .show-more {
+.show-more {
     text-align: center;
-    color: grey;
+    color: #4f5d6c;
+    font-size: 15px;
 }
 
 .other-lecture i {
-    color: grey;
+    color: #4f5d6c;
     margin-top: 15px;
-    vertical-align: text-bottom
+    
 }
+
 
 .upper {
     text-transform: uppercase;
     color: black !important;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .box {
-    border: 1px solid grey;
-    width: 255px;
-    height: 245px;
+    border: 1px solid #4f5d6c;
+ 
 }
 
 .box p {
-    margin-left: 10px;
-    color: grey;
+    margin-left: 15px;
+    color: #4f5d6c;
 }
 
 /*Notes*/
