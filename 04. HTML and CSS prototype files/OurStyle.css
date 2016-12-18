@@ -86,19 +86,14 @@ p {
     clear: both;
 }
 
-h1, h2, h3, h4, h5, h6, .k-header {
-    color: #1F8294;
-    margin: 3px;
-    font-weight: normal;
-}
-
 footer {
     background: black;
     height: 80px;
 }
 
-.navbar {
+#main-nav-mobile {
     border: none;
+    border-radius: 0;
 }
 
 #mainMenu li a{
