@@ -29,3 +29,7 @@ $(function () {
         videoLink.attr('border-bottom:', '1px solid: green');
     }
 });
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
