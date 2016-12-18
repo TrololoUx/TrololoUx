@@ -206,8 +206,12 @@ div#mainMenu.collapse.in {
     text-align: center;
 }
 
-.lecture-description p strong {
+.f-size {
     font-size: 30px;
+}
+
+.lecture-description {
+    padding-top: 15px;
 }
 
 .decor {
