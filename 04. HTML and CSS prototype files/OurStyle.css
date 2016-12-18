@@ -222,6 +222,11 @@ footer {
     color: #FF5E56
 }
 
+.lector-info img {
+    width: 250px;
+    height: 150px;
+}
+
 @media (min-width: 768px) {
     #main-nav-mobile {
         position: fixed;
