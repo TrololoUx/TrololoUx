@@ -109,6 +109,11 @@ div#mainMenu.collapse.in {
     background: #484455;
 }
 
+.title-container {
+    position: relative;
+    margin: 10px 0 20px 0;
+}
+
 .menu {
     list-style-type: none;
 }
@@ -178,6 +183,12 @@ div#mainMenu.collapse.in {
 }
 
 /*Share Icons */
+.iconsOuter {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+
 .iconsWrapper{
     width: 156px;
     height: 24px;
@@ -194,6 +205,7 @@ div#mainMenu.collapse.in {
 .iconsHolder.visible{
     right:0;
 }
+
 .visible-on-mobile{
     display: none;
 }
@@ -256,9 +268,15 @@ div#mainMenu.collapse.in {
     .visible-on-mobile{
         display: block;
     }
+
+    .not-visible-on-mobile{
+        display: none;
+    }
+
     .firstNav{
         margin-bottom: 80px;
     }
+
     .firstNav .fa{
         margin-right:10px;
         width:30px;
@@ -268,5 +286,8 @@ div#mainMenu.collapse.in {
     }
     #mainMenu .fa{
         font-size:19px;
+    }
+    .title-container p {
+        width: 180px;
     }
 }
