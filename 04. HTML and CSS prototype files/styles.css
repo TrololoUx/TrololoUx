@@ -284,6 +284,7 @@ div#mainMenu.collapse.in {
 
 .f-size {
     font-size: 35px;
+    font-weight: 300;
 }
 
 .lecture-description {
@@ -296,10 +297,6 @@ div#mainMenu.collapse.in {
 
 #other-lecture-wrap {
     margin-top: 85px;
-}
-
-.decor {
-    list-style-type: circle;
 }
 
 .lector-info img {
@@ -323,20 +320,21 @@ div#mainMenu.collapse.in {
 
 .other-lecture i {
     color: #4f5d6c;
-    margin-top: 15px;
-    
+    margin-top: 15px;   
 }
-
 
 .upper {
     text-transform: uppercase;
     color: black !important;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .box {
-    border: 1px solid #4f5d6c;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 10px;
  
 }
 
@@ -344,6 +342,7 @@ div#mainMenu.collapse.in {
     margin-left: 15px;
     color: #4f5d6c;
 }
+
 
 /*Notes*/
 .notes-container {
