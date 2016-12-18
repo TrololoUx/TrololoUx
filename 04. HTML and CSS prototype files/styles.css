@@ -335,7 +335,7 @@ div#mainMenu.collapse.in {
     }
 
     .not-visible-on-mobile{
-        display: none;
+        display: none!important;
     }
 
     .firstNav{
