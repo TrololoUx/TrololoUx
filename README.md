@@ -34,8 +34,11 @@ Improving the UX and Design of [http://ui.telerikacademy.com](http://ui.telerika
 
 ###Site architecture:###
 - **Site navigation - Main purpose:**
-  - Simplify site
-  - 
+  - Separate Academies linksin cources navigation in a separate nav tab - Academies
+  - Remove duplicate information
+  - Add separate tab for Academy Admission
+  - Simplify site navigation
+  
 - **Footer - Main purpose:**
   - Simplify site footer by removing duplicate links
   - Rearrnge existing links in a logical sequence
