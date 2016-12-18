@@ -1,75 +1,40 @@
-# TrololoUx
+Team Trololo
+=========
+
+----------
+
+##UX Design and Photoshop cource##
 
 
-# Course project assignment
-_UX Design and Photoshop_
+###Project desctiption:###
+Improving the UX and Design of [http://ui.telerikacademy.com](http://ui.telerikacademy.com) by imroving:
 
-- Tsk: improve the UX and Design of:
- 
-    - **Material pages**:
-      - Each materials page must show demos, slides, videos
-      - Example: merge the following pages:     
-        - Slides page: [http://ui.telerikacademy.com/Courses/LectureResources/Presentation/9107](http://ui.telerikacademy.com/Courses/LectureResources/Presentation/9107)
-        - Videos page: [http://ui.telerikacademy.com/Courses/LectureResources/Video/9113](http://ui.telerikacademy.com/Courses/LectureResources/Video/9113)
-      - Better UX and design of the Navigation
-      - Better and more beautiful way to show urgent messages to users
-        - Examples: "Трябва да си изберете група", "Имате нови приятелства"
-      - Both for public and authenticated users
-    - **Initiatives**
-      - **Initiatives page** - create a page, where all Telerik Academy initiatives are listed, and there is a brief description of Telerik Academy
-        - This is a brand new page
-        - Both for public and authenticated users (if it is applicable)
+-  **Materials page**
+-  **Notifications and messages functionality**
+-  **Favorites** - new functionality added
+-  **Site architecture**
 
-- Bonus tasks
-  - You could make any number of additinal pages by your choice
+###Material page:###
+- **Main purposes:**
+  - Combine lecture materials (video, slides, demo and homework) in a single page
+  - New functionality for jumping to the particular part of the video
+  - New functionality for adding notes
+  - New functionality for adding lecture to favorites 
+  - New functionality for direct access to the videos from the same course
 
-- For each of the tasks you should use the style guide provided in the folder **_StyleGuide.psd_/_StyleGuide.png_**
 
-##  Task 1: UX
+###Notifications and messages:###
+- **Main purpose:**
+  - Separate notifications and messages logic implemented by separate icons in navbar. Notifications icon lists all system notifications such as: "New active course" or "Exam schedule". Messages icon lists the recieved messaged from another users.
 
-- Improve the user experience of part of http://ui.telerikacademy.com
-  - Improve user interaction
-  - Improve information architecture
-  - Improve the UX for mobile devices
 
-##  Task 2: Design
+###Favorites:###
+- **Main purpose:**
+  - Show all the lectures marked by the user as favorites. All listed items can be removed by the owner user.
 
-- Build a new design based on http://ui.telerikacademy.com
-  - You can reuse existing components
-  - You must limit to the colors from this palette
-
-##  Task 3: Prototype
-
-- Create a simple static prototype using HTML & CSS
-
-## Criteria
-- Whole project
-  - A straightforward and understandable user flow. 
-  - Clear information architecture, visible through the main navigation. Navigation is displayed in a usable way for mobile. 
-  - Clear labels and microcopy.  
-  - Consider responsive layout rearrangement for mobile. 
-  - Clear affordance for the elements  – e.g. buttons, links, etc. Displayed interaction states of the elements and screens. 
-  - Clear primary actions for the pages or page sections. 
-  - Low interaction cost. 
-- Photoshop files
-  - Correct unit type must be used e.g. pixels
-  - Files must be well organized and structured e.g. proper layer names; good use of groups
-  - Use layer comps, if applicable
-  - Try to use layers based on types e.g. fill of gradient layers instead of raster layer with color overlay / gradient overlay
-- Prototypes
-  - Not built with tables
-  - Built without using absolute position (absolute position can be used, but not for everything)
-  - Responsive means having one page that adapts, no several showing different viewports
-
-## UX Design
-- Requirements 
-  - Define the goal of the pages you are about to design. List all goals if more than one and order them by priority. 
-  - Based on the goal in p.1, create a workflow diagram showing the tasks a user must accomplish within the system. Tasks must be in a sequential order, grouped by scenarios if more than one is available. Show conditional logic if available – e.g. if user is logged or not logged.  
-  - Structure and mock up the main site navigation, including the fly-out menus (if you use ones). Consider a specific layout for the responsive view for mobile. 
-  - Create low fidelity wireframes for the pages and link them together in a prototype.  Consider responsive layout rearrangement for mobile. You can use a prototyping tool of your choice (e.g. Axure, UXPin, InVision, Balsamiq, Justinmind, other; or plain HTML; or even paper prototypes that are scanned and linked together). 
-  - Your wireframes, and particularly your final project, must comply with the 10 usability heuristics. The more boxes you check - the better.  Apply techniques discussed during the lectures for information architecture, interaction design, UI design, mobile design. 
- 
-## UX Task Deliverables 
-  - A short summary of the goal of the designed pages 
-  - A workflow diagram 
-  - Low-fidelity wireframes stitched in a clickable prototype, including the main navigation. Draft the layout for the navigation in mobile too. 
+###Site architecture:###
+- **Site navigation - Main purpose:**
+  - Simplify site
+- **Footer - Main purpose:**
+  - Simplify site footer by removing duplicate links
+  - Rearrnge existing links in a logical sequence
