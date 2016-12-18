@@ -1,4 +1,5 @@
 $(function () {
+    //share icons
     let shareIconDiv = $('.share');
     let shareLinks = $('.share-links');
     let shareIcon = $('.share .fa-share-alt');
@@ -10,9 +11,7 @@ $(function () {
         shareIcon.toggleClass('blue');
     }
 
-
-
-
+    //video
     let goToArr = $('#go-to-array');
     let video = $('#youtube');
 
