@@ -33,5 +33,7 @@ Improving the UX and Design of [http://ui.telerikacademy.com](http://ui.telerika
   - Show all the lectures marked by the user as favorites. All listed items can be removed by the owner user.
 
 ###Site architecture:###
-- **Main purpose:**
+- **Site navigation - Main purpose:**
+  -
+- **Footer - Main purpose:**
   - Simplify site footer by removing duplicate links
