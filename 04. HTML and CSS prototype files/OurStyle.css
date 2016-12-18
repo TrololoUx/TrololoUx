@@ -101,8 +101,8 @@ footer {
     border: none;
 }
 
-.nav > .dropdown > .dropdown-toggle {
-    color: white !important;
+#mainMenu li a{
+    color:#fff!important;
 }
 
 #logo {
@@ -125,8 +125,34 @@ div#mainMenu.collapse.in {
 .user-img {
     width: 24px;
     border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color:#1F8294;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #1f8294;
+}
+
+.navbar-default .navbar-toggle.collapsed {
+    border-color: #fff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #1F8294;
+}
 .menu > li > a.dropdown-toggle {
     color: white;
     position: relative;
@@ -173,7 +199,9 @@ div#mainMenu.collapse.in {
 .iconsHolder.visible{
     right:0;
 }
-
+.visible-on-mobile{
+    display: none;
+}
 
 .current-directory {
     color: #FF5E56
@@ -183,4 +211,21 @@ div#mainMenu.collapse.in {
     width: 250px;
     height: 150px;
 }
-
+@media (max-width: 767px) {
+    .visible-on-mobile{
+        display: block;
+    }
+    .firstNav{
+        margin-bottom: 80px;
+    }
+    .firstNav .fa{
+        margin-right:10px;
+        width:30px;
+    }
+    .menu-icon {
+        float:left;
+    }
+    #mainMenu .fa{
+        font-size:19px;
+    }
+}

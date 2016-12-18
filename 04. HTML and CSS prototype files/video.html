@@ -32,9 +32,21 @@
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="mainMenu">
-                        <ul class="nav navbar-nav navbar-left">
+                        <ul class="nav navbar-nav navbar-left firstNav">
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">АКАДЕМИЯ
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-university visible-on-mobile menu-icon " aria-hidden="true"></i>
+                                    АКАДЕМИИ
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="display: none">
+                                    <!--place for submenus-->
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa  fa-file-text-o visible-on-mobile menu-icon " aria-hidden="true"></i>
+                                    ПРИЕМ
                                     <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu" style="display: none">
@@ -42,7 +54,9 @@
                                 </ul>
                             </li>
                             <li class="dropdown hasSubdropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">КУРСУВЕ И ИНИЦИАТИВИ
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa menu-icon fa-graduation-cap visible-on-mobile" aria-hidden="true"></i>
+                                    КУРСОВЕ
                                     <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu big-dropdown-menu" style="display: none">
@@ -50,7 +64,9 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ФОРУМ
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-comments-o visible-on-mobile menu-icon " aria-hidden="true"></i>
+                                    ФОРУМ
                                     <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu" style="display: none">
@@ -59,17 +75,19 @@
                             </li>
                             <li class="nav-search">
                                 <a href="#">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <i class="fa fa-search menu-icon" aria-hidden="true"></i>
+                                    <span class="visible-on-mobile">ТЪРСЕНЕ</span>
                                 </a>
                             </li>
                             <li class="nav-question">
                                 <a href="#">
-                                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                                    <i class="fa fa-question menu-icon" aria-hidden="true"></i>
+                                    <span class="visible-on-mobile">ПОМОЩ</span>
                                 </a>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
+                            <li class="dropdown menu-icon">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <img class="user-img" src="./Images/user.png" alt="User"> ПОТРЕБИТЕЛ
                                     <span class="caret"></span>
@@ -80,17 +98,17 @@
                                     <li><a href="/Users/Auth/FacebookLogin" id="FbLogin" class="entranceButton" rel="nofollow">Вход с Facebook</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-bell">
+                            <li class="menu-icon nav-bell">
                                 <a href="#">
                                     <i class="fa fa-bell-o" aria-hidden="true"></i>
                                 </a>
                             </li>
-                            <li class="nav-envelope">
+                            <li class="menu-icon nav-envelope">
                                 <a href="#">
                                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 </a>
                             </li>
-                            <li class="nav-star">
+                            <li class="menu-icon nav-star">
                                 <a href="#">
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                 </a>
@@ -108,7 +126,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="navigation-container">
-                            <a href="#">Курсове и инициативи</a>
+                            <a href="#">Курсове</a>
                             <strong>></strong>
                             <a href="#">Основи на програмирането</a>
                             <strong>></strong>
