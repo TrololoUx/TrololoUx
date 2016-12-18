@@ -252,6 +252,67 @@ div#mainMenu.collapse.in {
     margin-left: 10px;
     color: grey;
 }
+
+/*Notes*/
+.notes-container {
+    background-color: #2CA6BB;
+    --overflow: hidden;
+    padding-bottom: 112px;
+}
+
+.note-list {
+    list-style-type: none;
+}
+
+.single-note {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    --color: darkslategrey;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35)
+}
+
+.note-icons-container {
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+.note-icons-container .fa {
+    color: #2CA6BB;
+    font-size: 17px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+.note-content {
+    padding-bottom: 15px;
+    color: darkslategrey;
+}
+
+.posted-on {
+    float: right;
+    text-align: right;
+    font-size: 12px;
+    color: #4f5d6c;
+    --padding-top: 5px;
+}
+
+.add-note {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.add-note .fa {
+    font-size: 56px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+.fa-plus-circle {
+    color: white;
+}
+
 @media (max-width: 767px) {
     .visible-on-mobile{
         display: block;
