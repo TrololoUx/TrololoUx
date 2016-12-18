@@ -148,37 +148,45 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Видео</a></li>
-                        <li role="presentation"><a href="#slides" aria-controls="slides" role="tab" data-toggle="tab">Слайдове</a></li>
-                        <li role="presentation"><a href="#notes" aria-controls="notes" role="tab" data-toggle="tab">Записки</a></li>
-                        <li class="not-visible-on-mobile">
-                            <a href="#" class="external-link">Демо
-                                <i class="fa fa-external-link" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="not-visible-on-mobile">
-                            <a href="#" class="external-link">Домашно
-                                <i class="fa fa-external-link" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <div id="submenu">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Видео</a></li>
+                                    <li role="presentation"><a href="#slides" aria-controls="slides" role="tab" data-toggle="tab">Слайдове</a></li>
+                                    <li class="notes-tab" role="presentation">
+                                        <a href="#notes" aria-controls="notes" role="tab" data-toggle="tab">
+                                            Записки
+                                         </a>
+                                        <div class="notes-number">
+                                            2
+                                        </div>
+                                    </li>
+                                    <li class="not-visible-on-mobile">
+                                        <a href="#" class="external-link">Демо
+                                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="not-visible-on-mobile">
+                                        <a href="#" class="external-link">Домашно
+                                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Tab panes -->
+            <!-- Tab panes -->
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="video">
                         <div class="video col-md-7">
                             <iframe id="youtube" width="654" height="380" src="https://www.youtube.com/embed/cj4lCdBJRrw?list=PLF4lVL1sPDSnWZrG7cC35Uag1bx3We8le"
-                                frameborder="0" allowfullscreen></iframe>
                         </div>
                         <aside>
                             <div class="row">
@@ -206,7 +214,6 @@
                         <aside>
                             <div id="RevealContainer" style="width: 100%; height: 680px;">
                                 <iframe src="https://rawgit.com/TelerikAcademy/CSharp-Part-1/2016-March/Topics/01.%20Introduction-to-Programming/slides/index.html"
-                                    allowfullscreen="" class="reveal" style="width:100%; height: 100%"></iframe>
                             </div>
                         </aside>
                     </div>
@@ -227,9 +234,6 @@
                                                         <i class="fa fa-times" aria-hidden="true"></i>
                                                     </div>
                                                     <div class="note-content">
-                                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                                                            fermentum mollis ex vitae hendrerit. Maecenas luctus aliquet
-                                                            libero venenatis convallis. Duis nec tincidunt tellus."
                                                         </p>
                                                     </div>
                                                     <div class="col-sm-4 posted-on">
@@ -251,12 +255,6 @@
                                                         <i class="fa fa-times" aria-hidden="true"></i>
                                                     </div>
                                                     <div class="note-content">
-                                                        <p>"In quam velit, pellentesque id neque at, suscipit malesuada quam.
-                                                            Curabitur facilisis, arcu in bibendum efficitur, mauris neque
-                                                            suscipit massa, sit amet suscipit risus lectus tempor velit.
-                                                            Etiam tellus nisi, pulvinar eu arcu vitae, dapibus consequat
-                                                            urna. Pellentesque habitant morbi tristique senectus et netus
-                                                            et malesuada fames ac turpis egestas."
                                                         </p>
                                                     </div>
                                                     <div class="col-sm-4 posted-on">
@@ -272,68 +270,67 @@
                     </div>
                 </div>
             </div>
-            <article>
+            <article id="lector-info-wrap">
                 <div class="container">
                     <div class="row">
                         <div class="lector-info col-md-2">
                             <p><strong>Лектор</strong></p>
                             <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAfuAAAAJGMyZDgwYmRhLTZiNTktNDMxOS1iZDlkLWEwMjBkZDY2ZGFhNQ.jpg"
-                                alt="">
+                                 alt="">
                             <p><strong>Иван Колев</strong></p>
                         </div>
-                        <div class="lecture-description col-lg-9">
+                        <div class="lecture-description col-lg-10">
                             <p class="f-size">Описание на лекцията</p>
-                            <p>Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations.
-                                Neither the length of a JavaScript array nor the types of its elements are fixed. Since an
-                                array's length can change at any time, and data can be stored at non-contiguous locations
-                                in the array, JavaScript arrays are not guaranteed to be dense - this depends on how the
-                                programmer chooses to use them. In general, these are convenient characteristics; but if
-                                these features are not desirable for your particular use, you might consider using typed
-                                arrays.
+                            <p class="info">Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations.
+                                Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's
+                                length can change at any time, and data can be stored at non-contiguous locations in the array,
+                                JavaScript arrays are not guaranteed to be dense - this depends on how the programmer chooses
+                                to use them. In general, these are convenient characteristics; but if these features are not
+                                desirable for your particular use, you might consider using typed arrays.
                             </p>
                         </div>
                     </div>
                 </div>
             </article>
-            <article>
+            <article id="other-lecture-wrap">
                 <div class="other-lecture">
                     <h3>Други лекции от курса основи на JavaScript</h3>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-sm-6 col-md-3 col-xs-6">
                                 <div class="box">
-                                    <iframe width="254" height="180" src="https://www.youtube.com/embed/ulOX2TGdt4I" frameborder="0" allowfullscreen></iframe>
-                                    <p class="upper"><strong>Масиви</strong>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ulOX2TGdt4I" frameborder="0" allowfullscreen></iframe>
+                                    <p class="upper">Масиви
                                         <p>
                                             <p>Марто</p>
-                                            <p>3h 50min</p>
+                                            <p>∙3h 50min</p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-sm-6 col-md-3 col-xs-6">
                                 <div class="box">
-                                    <iframe width="254" height="180" src="https://www.youtube.com/embed/ndsF5e5tgRA" frameborder="0" allowfullscreen></iframe>
-                                    <p class="upper"><strong>Масиви</strong>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ndsF5e5tgRA" frameborder="0" allowfullscreen></iframe>
+                                    <p class="upper">Масиви
                                         <p>
                                             <p>Марто</p>
-                                            <p>3h 50min</p>
+                                            <p>∙3h 50min</p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-sm-6 col-md-3 col-xs-6">
                                 <div class="box">
-                                    <iframe width="254" height="180" src="https://www.youtube.com/embed/ldnT11RCFyM" frameborder="0" allowfullscreen></iframe>
-                                    <p class="upper"><strong>Масиви</strong>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ldnT11RCFyM" frameborder="0" allowfullscreen></iframe>
+                                    <p class="upper">Масиви
                                         <p>
                                             <p>Марто</p>
-                                            <p>3h 50min</p>
+                                            <p>∙3h 50min</p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-sm-6 col-md-3 col-xs-6">
                                 <div class="box">
-                                    <iframe width="254" height="180" src="https://www.youtube.com/embed/qlWJG6cyps8" frameborder="0" allowfullscreen></iframe>
-                                    <p class="upper"><strong>Цикли</strong>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qlWJG6cyps8" frameborder="0" allowfullscreen></iframe>
+                                    <p class="upper">Цикли
                                         <p>
                                             <p>Марто</p>
-                                            <p>3h 50min</p>
+                                            <p>∙3h 50min</p>
                                 </div>
                             </div>
                         </div>
