@@ -463,8 +463,18 @@ div#mainMenu.collapse.in {
 
 
 /*SLIDES*/
+#RevealContainer {
+    position: relative;
+    width: 100%;
+    padding-bottom: 45%;
+    height: 0;
+    overflow: hidden;
+}
 
 #RevealContainer iframe {
+    position:absolute;
+    width:100%;
+    height:100%;
     border: none;
 }
 
