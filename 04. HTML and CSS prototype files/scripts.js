@@ -29,13 +29,39 @@ $(function () {
 
     //video controls
     let goToArr = $('#go-to-array');
+    let goToAccessing = $('#go-to-accessing');
+    let goToProcessing = $('#go-to-processing');
+    let goToDynamic = $('#go-to-dynamic');
+    let goToDeClaring = $('#go-to-declaring');
     let video = $('#youtube');
 
-    goToArr.on('click', changeVideo);
+    goToArr.on('click', changeVideo1);
+    goToAccessing.on('click', changeVideo2);
+    goToProcessing.on('click', changeVideo3);
+    goToDynamic.on('click', changeVideo4);
+    goToDeClaring.on('click', changeVideo5);
 
-    function changeVideo(ev) {
-        video.attr('src', 'https://www.youtube.com/embed/cj4lCdBJRrw?list=PLF4lVL1sPDSnWZrG7cC35Uag1bx3We8le&start=450');
+
+    function changeVideo1(ev) {
+        video.attr('src', 'https://www.youtube.com/embed/ulOX2TGdt4I?start=10');
     }
+
+    function changeVideo2(ev) {
+        video.attr('src', 'https://www.youtube.com/embed/ulOX2TGdt4I?start=300');
+    }
+
+    function changeVideo3(ev) {
+        video.attr('src', 'https://www.youtube.com/embed/ulOX2TGdt4I?start=321');
+    }
+
+    function changeVideo4(ev) {
+        video.attr('src', 'https://www.youtube.com/embed/ulOX2TGdt4I?start=534');
+    }
+
+    function changeVideo5(ev) {
+        video.attr('src', 'https://www.youtube.com/embed/ulOX2TGdt4I?start=1002');
+    }
+
 
     //add note controls
     let $noteIcon = $(".video-add-note .fa-edit");
