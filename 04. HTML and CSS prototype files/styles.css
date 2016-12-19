@@ -395,11 +395,16 @@ div#mainMenu.collapse.in {
     position: relative;
 }
 
-.Aligner {
+.Aligner, .Aligner-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.Aligner-wrap {
+    flex-wrap: wrap;
+}
+
 .Aligner-item {
   max-width: 50%;
 }
@@ -569,13 +574,13 @@ div#mainMenu.collapse.in {
     font-size: 20px;
     margin-top: 10px;
 }
-
 .box {
     border: 1px solid #d7d7d7;
     border-radius: 5px;
     overflow: hidden;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    width: 250px;
+    margin: 0 20px 20px 20px;
 }
 
 .box p {
