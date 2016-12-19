@@ -405,6 +405,7 @@ div#mainMenu.collapse.in {
 .video-padding {
     padding: 0 10% 0 10%;
     position: relative;
+    overflow: hidden;
 }
 
 .video-controls-holder {
