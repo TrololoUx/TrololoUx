@@ -367,6 +367,8 @@ div#mainMenu.collapse.in {
     color: #FF5E56;
 }
 
+
+
 .notes-tab {
     width: 110px;
 }
@@ -510,27 +512,23 @@ div#mainMenu.collapse.in {
     border: none;
 }
 
-.lector-info {
-    max-width: 200px;
-    float: left;
+.author {
+    text-align: center;
+    margin: 30px;
+}
+.video-description{
+    margin-top:30px;
 }
 
-.lector-info img {
+.author img {
     max-width: 200px;
     height: 100%;
 }
 
-.lector-info p{
-    text-align: center;
-}
-.lecture-description {
-    float: left;
-    width: 65%;
-    margin-left: 5%;
-}
 .info {
     color: #4f5d6c;
     font-size: 17px;
+    text-align: justify;
 }
 
 .f-size {
@@ -789,5 +787,12 @@ li.notes-item:first-child {
         margin-left: 0px;
         background: #348192;
         padding: 0px;
+    }
+    
+    
+}
+@media (max-width: 1024px) {
+    .f-size{
+        text-align: center;
     }
 }
