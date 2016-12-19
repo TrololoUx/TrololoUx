@@ -369,7 +369,12 @@ div#mainMenu.collapse.in {
     border:none;
 }
 
-.lector-info {
+.lector-info img {
+    width: 200px;
+    height: 200px;
+}
+
+.lector-info p{
     text-align: center;
 }
 
@@ -383,22 +388,12 @@ div#mainMenu.collapse.in {
     font-weight: 300;
 }
 
-.lecture-description {
-    padding-top: 15px;
-}
-
 #lector-info-wrap {
     margin-top: 40px;
 }
 
 #other-lecture-wrap {
     margin-top: 85px;
-}
-
-.lector-info img {
-    width: 140px;
-    height: 140px;
-    border-radius: 5px;
 }
 
 .other-lecture h3{
