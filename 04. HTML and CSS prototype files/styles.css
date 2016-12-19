@@ -217,6 +217,30 @@ div#mainMenu.collapse.in {
     margin-right: 10px;
 }
 
+.popover {
+    min-width: 200px;
+    color: white;
+    background-color: #348192;
+    text-decoration: underline;
+}
+
+.popover.bottom>.arrow:after {
+    border-bottom-color: #348192;;
+}
+
+.notification-count {
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+    text-align: center;
+    position: relative;
+    left: -15px;
+    top: -12px;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
