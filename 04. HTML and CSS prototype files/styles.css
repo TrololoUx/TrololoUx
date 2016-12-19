@@ -228,18 +228,7 @@ div#mainMenu.collapse.in {
     border-bottom-color: #348192;;
 }
 
-.notification-count {
-    background-color: red;
-    border: 1px solid red;
-    border-radius: 50%;
-    display: inline-block;
-    height: 21px;
-    width: 21px;
-    text-align: center;
-    position: relative;
-    left: -15px;
-    top: -12px;
-}
+
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
@@ -382,7 +371,8 @@ div#mainMenu.collapse.in {
     width: 110px;
 }
 
-.notes-number {
+.notes-number,
+.notification-count {
     width: 20px;
     height: 20px;
     background: #10a67d;
@@ -391,9 +381,26 @@ div#mainMenu.collapse.in {
     position: absolute;
     right: 0;
     top: 28%;
-    padding-left: 6px;
 }
 
+.notification-count {
+    right: 4px;
+    top: 11px;
+    background: #ff5e56;
+}
+
+.menu-icon{
+    position: relative;
+}
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  max-width: 50%;
+}
 
 /* TABS CONTENT STYLES*/
 
@@ -755,6 +762,7 @@ li.notes-item:first-child {
     }
     .menu-icon {
         float: left;
+        
     }
     #mainMenu .fa {
         font-size: 19px;
